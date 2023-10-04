@@ -24,4 +24,28 @@ export const ADD_USER = gql`
   }
 `;
 
+export const UPDATE_GAMES = gql`
+  mutation updateGames($games: Int!) {
+    updateGames(games: $games) {
+      _id
+      username
+      email
+      games
+      wins
+    }
+  }
+`;
+
+export const UPDATE_WINS = gql`
+  mutation updateWins($wins: Int!) {
+    updateWins(wins: $wins) {
+      _id
+      username
+      email
+      games
+      wins
+    }
+  }
+`;
+
 
