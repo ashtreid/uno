@@ -24,3 +24,5 @@ const analytics = getAnalytics(app);
 // Initialize Realtime Database and get a reference to the service
 const database = getDatabase(app);
 const auth = getAuth(app);
+
+export { database, auth };
