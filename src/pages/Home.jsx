@@ -18,7 +18,6 @@ const Home = () => {
             <h1>Welcome to Uno!</h1>
             <Button variant="primary" onClick={handleShowSignup}>Sign Up</Button>
             <Button variant="secondary" onClick={handleShowLogin}>Log In</Button> {/* Login button */}
-            <button onClick={() => alert('Hello, world!')}>New Game</button>
 
             {/* Signup Modal */}
             <Modal show={showSignup} onHide={handleCloseSignup}>
