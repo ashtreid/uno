@@ -60,6 +60,80 @@ const Signup = () => {
 export default Signup;
 
 
+/////// CODE WITH REACT ROUTER DOM IMPLEMENTATION ///////
+// import React, { useState } from 'react';
+// import { createUserWithEmailAndPassword } from 'firebase/auth';
+// import { useHistory } from 'react-router-dom'; // For React Router v5
+// // import { useNavigate } from 'react-router-dom'; // Uncomment for React Router v6
+// import { auth } from '../../firebase';
+
+// const Signup = () => {
+//   const [email, setEmail] = useState('');
+//   const [password, setPassword] = useState('');
+//   const [error, setError] = useState('');
+//   const history = useHistory(); // For React Router v5
+//   // const navigate = useNavigate(); // Uncomment for React Router v6
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+
+//     try {
+//       await createUserWithEmailAndPassword(auth, email, password);
+//       // Redirect to lobby/home page
+//       history.push('/lobby'); // For React Router v5
+//       // navigate('/lobby'); // Uncomment for React Router v6
+//     } catch (error) {
+//       setError(error.message);
+//     }
+//   };
+  
+//   return (
+//     <Form onSubmit={handleSubmit}>
+//       {/* Email and password fields */}
+//       <Form.Group className="mb-3" controlId="formBasicEmail">
+//         <Form.Label>Email address</Form.Label>
+//         <Form.Control
+//           type="email"
+//           placeholder="Enter email"
+//           value={email}
+//           onChange={(e) => setEmail(e.target.value)}
+//           required
+//         />
+//       </Form.Group>
+
+//       <Form.Group className="mb-3" controlId="formBasicPassword">
+//         <Form.Label>Password</Form.Label>
+//         <Form.Control
+//           type="password"
+//           placeholder="Enter password"
+//           value={password}
+//           onChange={(e) => setPassword(e.target.value)}
+//           required
+//         />
+//       </Form.Group>
+
+//       {/* Error message display */}
+//       {error && <div style={{ color: "red" }}>{error}</div>}
+
+//       <Button variant="primary" type="submit">
+//         Sign Up
+//       </Button>
+//     </Form>
+//   );
+// };
+
+// export default Signup;
+/////// CODE WITH REACT ROUTER DOM IMPLEMENTATION ///////
+
+
+
+
+
+
+
+
+
+/////// OLD CODE MISTAKENLY UTILIZING FIRESTORE INSTEAD OF REALTIME DATABASE ///////
 // import React, { useState } from "react";
 // import { createUserWithEmailAndPassword } from "firebase/auth";
 // import { doc, setDoc } from "firebase/firestore";
