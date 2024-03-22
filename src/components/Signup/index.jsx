@@ -18,6 +18,28 @@ const Signup = () => {
       // Redirect to lobby/home page after successful authentication
       navigate('/lobby'); 
     } catch (error) {
+      // TODO: Custom error handling that can be implemented and tested later
+      // let errorMessage;
+      // switch (error.code) {
+      //   case 'auth/invalid-email':
+      //     errorMessage = 'Invalid email format. Please enter a valid email address.';
+      //     break;
+      //   case 'auth/weak-password':
+      //     errorMessage = 'Weak password. Your password must be at least 6 characters long.';
+      //     break;
+      //   case 'auth/email-already-in-use':
+      //     errorMessage = 'This email is already in use. Please use a different email or log in.';
+      //     break;
+      //   case 'auth/invalid-credential':
+      //   case 'auth/wrong-password':
+      //     errorMessage = 'Incorrect password. Please try again.';
+      //     break;
+      //   case 'auth/user-not-found':
+      //     errorMessage = 'No user found with this email. Please sign up.';
+      //     break;
+      //   default:
+      //     errorMessage = 'An error occurred. Please try again.';
+      // }
       setError(error.message);
     }
   };

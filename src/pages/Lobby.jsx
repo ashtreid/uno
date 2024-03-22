@@ -12,7 +12,7 @@ const Lobby = () => {
   return (
     <div>
       <h1>Welcome to the Uno Lobby!</h1>
-      <button onClick={handleStartGame}>Start New Game</button>
+      <button onClick={handleStartGame}>Enter Game 1</button>
     </div>
   );
 };
